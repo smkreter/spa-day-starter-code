@@ -23,6 +23,10 @@
         <h3>Manicure</h3>
         <p th:replace="fragments :: manicureDescription">Description</p>
     </th:block>
+    <th:block th:if='${manipedi.equals("pedicure")}'>
+        <h3>Pedicure</h3>
+        <p th:replace="fragments :: pedicureDescription">Description</p>
+    </th:block>
 </div>
 </body>
 </html>
