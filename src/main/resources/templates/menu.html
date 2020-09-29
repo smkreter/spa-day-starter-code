@@ -14,6 +14,14 @@
     <p th:text="${manipedi}">ManiPedi Value</p>
 </div>
 <div id = "servicesMenu">
+    <h2>Facial Menu</h2>
+    <p>We recommend the below treatments for your face problems. You're gross!</p>
+    <th:block th:each="facial: ${appropriateFacials}">
+        <p th:text="${facial}">Facial Option</p>
+    </th:block>
 </div>
+<th:block th:if="">
+
+</th:block>
 </body>
 </html>
